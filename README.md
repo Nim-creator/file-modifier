@@ -3,4 +3,12 @@
 ## Description
 This Python script reads a file, converts all its contents to uppercase, and writes it to a new file prefixed with `modified_`. It includes error handling for cases where the file cannot be found or read.
 
-[View the script file](file modifier.py)
+
+### File: `file_modifier.py`
+
+```python
+def modify_file_content(filename):
+    try:
+        with open(filename, 'r') as file:
+            content = file.read()
+        # ... rest of the code
